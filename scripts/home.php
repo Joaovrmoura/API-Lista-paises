@@ -8,7 +8,6 @@ $api = new ApiConsumer();
 // get all countries data
 $countries = $api->get_all_countries();
 
-
 // get a specific country name
 ?>
 <style>

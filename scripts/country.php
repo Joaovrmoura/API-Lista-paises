@@ -34,7 +34,7 @@ if(isset($_GET['country_name'])){
         </div>
     </div>
     <div class="m-4">
-        <a href="?route=home" class="btn btn-primary px-5">Votar</a>
+        <a href="?route=home" class="btn btn-primary px-5">Voltar</a>
     </div>
 
 </div>

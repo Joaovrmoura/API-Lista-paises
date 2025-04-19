@@ -1,6 +1,6 @@
 <?php
 
-class  ApiConsumer{
+class ApiConsumer{
     private function api($endpoint, $method = 'GET', $post_fields = []){
 
         $curl = curl_init();
@@ -43,8 +43,10 @@ class  ApiConsumer{
             return $countries;
         }
         public function get_country($country_name){
-            return $this->api("name/$country_name");
+            $name = explode(" ", $country_name);
+            return $this->api("name/$name[0]");
         }
     }
+
 ?>
    
